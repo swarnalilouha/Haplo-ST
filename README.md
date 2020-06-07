@@ -68,8 +68,9 @@ A sample toy dataset can be found in the 'test-dataset' sub-directory.
 
 •	The ‘header’ file can be modified to include less or more reference genes used for subtyping.
 
-•	The ‘genes’ folder contains fasta files for 2554 reference genes listed in the BIGSdb-Lm dataset. The ‘Makefile’ remains
-   unchanged for all analysis. 
+•	The ‘genes’ folder contains fasta files for 2554 reference genes listed in the BIGSdb-Lm dataset.
+
+•  The ‘Makefile’ remains unchanged for all analysis. 
 
     
 
