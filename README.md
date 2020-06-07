@@ -1,1 +1,1 @@
-# Haplo-ST
+# Haploid Sequence-Typer (Haplo-ST)
