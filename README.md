@@ -31,10 +31,12 @@ Haplo-ST uses FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) for clean
     Raw reads are cleaned with the following tools from the FASTX-Toolkit in a sequential manner:
    
       • fastx_trimmer : Trims low quality bases from the beginning or end of reads.
+      
       • fastq_quality_trimmer : Trims nucleotides with lower quality from the end of the sequence and purges reads lower
-          than a specified length after trimming.
+        than a specified length after trimming.
+          
       • fastq_quality_filter : Filters and retains reads which contain a minimum percent of bases with a desired quality
-          score.
+        score.
 
 5.	Makefile : file used by YASRA for assembling alleles.
 
