@@ -1,0 +1,12 @@
+Fastx_trimmer(step 1)
+First_base_pair : -f0  
+Last-base-pair  : -t0
+
+Fastq_quality_trimmer(step 2)
+Quality_threshold : -t0
+Minimum_length    : -l0
+
+Fastq_quality_filter(step 3)
+Minimum_quality_score : -q0
+Minimum_percent_bases : -p0
+
