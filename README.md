@@ -15,9 +15,9 @@ Haplo-ST uses FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) for clean
 
    Read names can contain a combination of alphabets and/or integers and should follow the format:
 
-       Forward-reads_R1_001.fastq : Forward reads in fastq format
+     Forward-reads_R1_001.fastq : Forward reads in fastq format
 
-       Reverse-reads_R2_001.fastq : Reverse reads in fastq format
+     Reverse-reads_R2_001.fastq : Reverse reads in fastq format
 
 2.	genes : This folder contains the reference genes used for subtyping. Each reference gene should be included as a separate file in fasta format. The choice and number of reference genes used for subtyping depends on the user; fewer reference genes can be used for low resolution typing, whereas higher resolution can be achieved by increasing the number of genes used in the analysis.
 
@@ -30,12 +30,12 @@ Haplo-ST uses FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) for clean
 
     Raw reads are cleaned with the following tools from the FASTX-Toolkit in a sequential manner:
 
-        •	fastx_trimmer :  Trims low quality bases from the beginning or end of reads.
+      • fastx_trimmer :  Trims low quality bases from the beginning or end of reads.
 
-        •	fastq_quality_trimmer  :  Trims nucleotides with lower quality from the end of the sequence and purges reads lower
+      • fastq_quality_trimmer  :  Trims nucleotides with lower quality from the end of the sequence and purges reads lower
           than a specified length after trimming.
 
-        •	fastq_quality_filter  :  Filters and retains reads which contain a minimum percent of bases with a desired quality
+      • fastq_quality_filter  :  Filters and retains reads which contain a minimum percent of bases with a desired quality
           score.
 
 5.	Makefile : file used by YASRA for assembling alleles.
