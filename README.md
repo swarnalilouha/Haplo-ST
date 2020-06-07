@@ -1,5 +1,5 @@
 # Haploid Sequence-Typer (Haplo-ST)
-===================================
+
 Haplo-ST is a pipeline for generating standardized whole-genome multi-locus sequence typing (wgMLST) of *Listeria monocytogenes (Lm)* isolates from whole-genome sequencing (WGS) data. Along with wgMLST profiles, this pipeline also generates assembled allele sequences and identifies paralogous genes for each *Lm* isolate.
 
 Haplo-ST works in several steps. It takes in (i) raw WGS reads as input, (ii) cleans the raw data according to user-specified parameters, (iii) assembles genes across loci by mapping to genes from reference strains, (iv) assigns allelic profiles to assembled genes and provides a wgMLST profile for each isolate. Data standardization and exchangeability relies on the tool assigning allelic profiles based on the centralized nomenclature defined by the BIGSdb-*Lm* database. More broadly, Haplo-ST is flexible and can be adapted to provide allele-based subtyping for any haploid organism, with the installation of an organism-specific gene database with associated allelic nomenclature within the Virtual Machine (VM) on which this pipeline runs.
