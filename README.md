@@ -7,7 +7,7 @@ Haplo-ST works in several steps. It takes in (i) raw WGS reads as input, (ii) cl
 ## Requirements:
 Haplo-ST should work in the Linux environment within the VM available at https://www.dropbox.com/s/zh10mpk0lukhadn/Haplo-ST.ova?dl=0. This VM can be imported to any local installation of Oracle VM VirtualBox.
 
-Haplo-ST uses FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) for cleaning sequencing reads, YASRA (https://github.com/aakrosh/YASRA) for assembling alleles by mapping to reference genes, and BIGSdb-Lm (https://bigsdb.pasteur.fr/listeria/) for assigning allelic profiles to assembled alleles.
+Haplo-ST uses FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) for cleaning sequencing reads, YASRA (https://github.com/aakrosh/YASRA) for assembling alleles by mapping to reference genes, and BIGSdb-*Lm* (https://bigsdb.pasteur.fr/listeria/) for assigning allelic profiles to assembled alleles.
 
 ## Starting Inputs:
 1. raw_data : This folder contains the forward and reverse reads for each sample in fastq format.
@@ -51,7 +51,7 @@ The program asks for the value of the ‘length criteria’:
 Length criteria = length of assembled allele / length of reference gene used for assembly
 This is a measure of the minimum length of the assembled allele that will be retained by the pipeline and assigned an allelic designation. All alleles having a length of less than the ‘length criteria’ will be filtered out by Haplo-ST. Insert the value of this parameter and press Enter.
 
-If everything runs smoothly, the file ‘header’ will be populated with wgMLST profiles of Lm isolates, for which WGS data had been provided in “raw_data”. This file can be opened up in MS Excel for better readability. Each row in this file corresponds to the allele-based profile of a specific Lm isolate, whose name is written in the first column of the row. Integers in every cell correspond to the allele ID of the associated gene present in the column header. New alleles not having a defined allele ID in BIGSdb-Lm are designated as close matches to another allele of the corresponding gene. For example, ‘closest match: 114’ refers to a new allele which closely matches allele 114 of the corresponding gene. Haplo-ST also generates the following folders:
+If everything runs smoothly, the file ‘header’ will be populated with wgMLST profiles of Lm isolates, for which WGS data had been provided in “raw_data”. This file can be opened up in MS Excel for better readability. Each row in this file corresponds to the allele-based profile of a specific Lm isolate, whose name is written in the first column of the row. Integers in every cell correspond to the allele ID of the associated gene present in the column header. New alleles not having a defined allele ID in BIGSdb-*Lm* are designated as close matches to another allele of the corresponding gene. For example, ‘closest match: 114’ refers to a new allele which closely matches allele 114 of the corresponding gene. Haplo-ST also generates the following folders:
 
    • consensus : Each file within this folder contains alleles assembled for a sample in fasta format. Files are named 
      according to names of samples provided to the pipeline.
