@@ -71,7 +71,7 @@ A sample toy dataset can be found in the 'test-dataset' sub-directory.
 
 •  The ‘Makefile’ remains unchanged for all analysis. 
 
-### Please cite when publishing results that use this pipeline:
+##### Please cite when publishing results that use this pipeline:
 Swarnali Louha, Richard J. Meinersmann, Zaid Abdo, Mark E. Berrang, Travis Glenn. 2020. Whole-Genome Sequence Typing shows extensive diversity of Listeria monocytogenes in the outdoor environment and poultry processing plants. doi: https://doi.org/10.1101/2020.06.18.160705
 
     
